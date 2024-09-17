@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/shortcut_icon.png" />
+    <title>ProductCard</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+  </head>
+
+  <body>
+    <main class="container">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <button class="previous-btn"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+        </svg>
+        </button>
+        
+        <!-- Images for Copper -->
+        <img data-image="copper" class="active" src="images/sennheiser_mtw4_copper_1.png" alt="">
+        
+        <!-- Images for White -->
+        <img data-image="white" src="images/sennheiser_mtw4_white_1.jpg" alt="">
+        
+        <button class="next-btn"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+        </svg>
+        </button>
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Наушники</span>
+          <h1>Sennheiser Momentum True Wireless 4</h1>
+          <p>Наслаждайтесь передовым беспроводным звуком и шагните в будущее с MOMENTUM True Wireless 4. Погрузитесь в звук, настроенный на ваш слух и предпочтения. Откройте для себя перспективные функции, такие как Auracast и LE Audio с адаптивным шумоподавлением и временем воспроизведения до 30 часов</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <div class="product-color">
+            <span>Цвет</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="copper" type="radio" id="copper" name="color" value="copper" checked>
+                <label for="copper"><span></span></label>
+              </div>
+              <div>
+                <input data-image="white" type="radio" id="white" name="color" value="white">
+                <label for="white"><span></span></label>
+              </div>
+              
+            </div>
+
+          </div>
+
+          
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>30 990 ₽</span>
+          <a href="#" class="cart-btn">В корзину</a>
+        </div>
+      </div>
+    </main>
+
+
+    <main class="Description">
+  <div class="Description_Specs">
+    <button id="descriptionBtn" class="active" onclick="showContent('description')">Описание</button>
+    <button id="specsBtn" onclick="showContent('specifications')">Характеристики</button>
+  </div>
+  
+  <div id="descriptionContent" class="content">
+    <p>Откройте для себя новейшие наушники Sennheiser Momentum True Wireless 4 Black.</p>
+    <p>Эти революционные новые наушники оснащены передовыми технологиями, такими как шумоподавление и режим прозрачности, что позволяет адаптироваться к любой среде. Наслаждайтесь персонализированным кристально чистым звуком благодаря системе TrueResponse. Наслаждайтесь звуком без потерь, персонализацией звука, поддержкой Bluetooth 5.4 и Auracast. Эргономичный дизайн обеспечивает комфорт в течение всего дня. Воспользуйтесь преимуществами адаптивного шумоподавления, режима прозрачности и системы с 6 микрофонами для звонков. Вас ждут 30 часов удовольствия от прослушивания и вечное качество Sennheiser в стильной отделке.</p>
+    <p>Длительное время автономной работы:<br> До 7,5 часов игрового времени с возможностью продления до 30 часов с помощью зарядного чехла и быстрая зарядка на час игры всего за 10 минут.</p>
+    <p>Режим прозрачности:<br>Впускайте окружающие звуки для осознания, не снимая наушников, обеспечивая естественное взаимодействие с окружающей средой благодаря малошумящим микрофонам.</p>
+    <p>Звук без потерь:<br>Обеспечивает безошибочную передачу звука по частям, сохраняя при этом бескомпромиссное качество звука во время беспроводного прослушивания.</p>
+    <p>Адаптивное активное шумоподавление:<br>Автоматически настраивает шумоподавление в соответствии с окружающей средой, создавая захватывающие впечатления от прослушивания.</p>
+    <p>Перспективные технологии:<br>Шагните в будущее с поддержкой Auracast и LE Audio и наслаждайтесь новейшими кодеками, совместимыми с Bluetooth 5.4.</p>
+  </div>
+  
+  <div id="specificationsContent" class="content hidden">
+    <ul>
+      <li>
+        <div class="left">
+          <span class="item__label">Бренд</span>
+        </div>
+        <span class="item__cor">Sennheiser</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Вид беспроводных наушников</span>
+        </div>
+        <span class="item__cor">True Wireless</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Версия Bluetooth</span>
+        </div>    
+        <span class="item__cor">5.4</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Мультипоинт</span>
+        </div>    
+        <span class="item__cor">да</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Поддержка кодеков</span>
+        </div>    
+        <span class="item__cor">AptX Lossless, AptX , AAC , SBC</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Минимум диапазона частоты, Гц</span>
+        </div>
+        <span class="item__cor">5</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Максимум диапазона частоты, Гц</span>
+        </div>
+        <span class="item__cor">21000</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Система активного шумоподавления</span>
+        </div>    
+        <span class="item__cor">да</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Сенсорное управление</span>
+        </div>    
+        <span class="item__cor">да</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Разъем для зарядки</span>
+        </div>    
+        <span class="item__cor">USB-C, QI</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Время работы, ч</span>
+        </div>    
+        <span class="item__cor">7.5</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Быстрая зарядка</span>
+        </div>    
+        <span class="item__cor">да</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Встроенный микрофон</span>
+        </div>    
+        <span class="item__cor">да</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Чехол/футляр в комплекте</span>
+        </div>    
+        <span class="item__cor">да</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Беспроводная зарядка </span>
+        </div>    
+        <span class="item__cor">да</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Вид наушников</span>
+        </div>    
+        <span class="item__cor">внутриканальные</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Время работы с зарядным футляром, ч</span>
+        </div>    
+        <span class="item__cor">30</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Количество драйверов</span>
+        </div>    
+        <span class="item__cor">1</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Тип излучателя</span>
+        </div>    
+        <span class="item__cor">динамический</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Количество микрофонов на наушнике</span>
+        </div>    
+        <span class="item__cor">3</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Водонепроницаемость</span>
+        </div>    
+        <span class="item__cor">Степень защиты IP54, защита от пыли и брызг</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Материал</span>
+        </div>    
+        <span class="item__cor">пластик</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Материал амбушюр</span>
+        </div>    
+        <span class="item__cor">силикон</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Вес одного наушника, г</span>
+        </div>
+        <span class="item__cor">6.2</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Водонепроницаемость</span>
+        </div>    
+        <span class="item__cor">Степень защиты IP54, защита от пыли и брызг</span>
+      </li>
+    
+      <li>
+        <div class="left">
+          <span class="item__label">Модель</span>
+        </div>    
+        <span class="item__cor">Sennheiser MOMENTUM True Wireless 4 (MTW4)</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Гарантия, мес</span>
+        </div>    
+        <span class="item__cor">12</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Срок службы, мес</span>
+        </div>    
+        <span class="item__cor">24</span>
+      </li>
+      <li>
+        <div class="left">
+          <span class="item__label">Страна производства</span>
+        </div>    
+        <span class="item__cor">Китай</span>
+      </li>
+      
+    </ul>
+  </div>
+</main>
+
+
+    <div class="footer">
+      <footer></footer>
+        <p>Все права защищены законом об авторском праве. Никакая часть содержимого сайта не может быть использована, репродуцирована, передана любым электронным, копировальным или другим способом без предварительного письменного разрешения владельца авторских прав © 2024</p>
+      </footer>
+    </div>
+    
+
+    <!-- Scripts -->
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
