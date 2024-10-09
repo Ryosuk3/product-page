@@ -303,12 +303,12 @@ ul li {
     align-items: center;
   }
   .left-column img{
-    width: 80%;
+    width: 100%;
     height: auto; 
     object-fit: cover;
   }
   .left-column img.active {
-    width: 80%;
+    width: 100%;
     height: auto; 
     object-fit: cover;
     
