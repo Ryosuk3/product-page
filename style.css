@@ -298,16 +298,38 @@ ul li {
     height: 100%;
     margin-bottom: 40%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  .left-column img {
+  .left-column img{
     width: 80%;
+    height: auto; 
+    object-fit: cover;
+  }
+  .left-column img.active {
+    width: 80%;
+    height: auto; 
+    object-fit: cover;
     
   }
 
-  .next-btn{
-    position: absolute;
-    align-self: center;
+  .previous-btn {
+    left: 5px;
+    margin-top: 25%;
+   
+  }
+  
+  .next-btn {
+    right: 5px; 
+    margin-top: 25%;
+    
+  }
+  
+  
+  
+  .previous-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
   }
   
 }
