@@ -339,17 +339,37 @@ ul li {
 
   .Description{
     margin-top: 60px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     margin-bottom: 60px;
   }
 
-  
-  
+
   .Description ul {
     padding-left: 0%;
     padding-right: 0%;
     list-style-type: none;
+  }
+
+  .Description ul li{
+    margin-top: 5%;
+  }
+  
+  .Description p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #1c1f21;
+    line-height: 24px;
+    padding-inline: 35px;
+    padding-top: 1%;
+  }
+
+  .content.visible ul li{
+    font-size: 14px;
+  }
+
+  .footer p{
+    font-size: 10px;
   }
   
   
