@@ -316,14 +316,15 @@ ul li {
 
   .previous-btn {
     left: 5px;
-    margin-top: 50%;
+    margin-top: 25%;
+    position: absolute;
    
   }
   
   .next-btn {
     right: 5px; 
-    margin-top: 50%;
-    
+    margin-top: 25%;
+    position: absolute;
   }
   
   
