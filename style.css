@@ -366,6 +366,7 @@ ul li {
 
   .content.visible ul li{
     font-size: 14px;
+    word-wrap: break-word;
   }
 
   .footer p{
